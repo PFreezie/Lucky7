@@ -13,8 +13,8 @@ public class App {
         do {
 
 
-            System.out.println("Haluatko jatkaa? /n Paina Enter jatkaaksesi! Poistu pelistä painamalla e ja Enter.");
+            System.out.println("Haluatko jatkaa? Paina Enter jatkaaksesi! Poistu pelistä painamalla e ja Enter.");
             jatkaa = in.nextLine();
-        } while ( jatkaa.equals(""));
+        } while ( jatkaa.equals("") && !jatkaa.equals("e"));
     }
 }
