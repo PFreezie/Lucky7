@@ -56,7 +56,7 @@ public class App {
             else if (randomNumber1 == 7 && randomNumber2 == 7 || randomNumber2 == 7 && randomNumber3 == 7 || randomNumber1 == 7 && randomNumber3 == 7){
                 voitto +=2;
                 System.out.println("Voitit 2 kertaa!");
-                raha += (rahaMaara*voitto)
+                raha += (rahaMaara*voitto);
                 System.out.println("Omistat "+raha+" euroa yhteensä rahaa!");
             }
             else if (randomNumber1 == 7 || randomNumber2 == 7 || randomNumber3 == 7){
