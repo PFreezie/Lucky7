@@ -5,7 +5,6 @@ public class App {
     public static void main(String[] args) throws Exception {
 
         int raha = 5;
-        int voitto = 0;
         String pelata = "temporary";
         String jatkaa = "";
 
@@ -14,7 +13,7 @@ public class App {
 
 
         do {
-            voitto = 0;
+            int voitto = 0;
             System.out.println("Lisää rahat peliin. Omistat "+raha+" euroa yhteensä rahaa!");
             int rahaMaara = Integer.parseInt(in.nextLine());
 
@@ -57,13 +56,13 @@ public class App {
             else if (randomNumber1 == 7 && randomNumber2 == 7 || randomNumber2 == 7 && randomNumber3 == 7 || randomNumber1 == 7 && randomNumber3 == 7){
                 voitto +=2;
                 System.out.println("Voitit 2 kertaa!");
+                raha += (rahaMaara*voitto)
                 System.out.println("Omistat "+raha+" euroa yhteensä rahaa!");
-                raha += (rahaMaara*5);
             }
             else if (randomNumber1 == 7 || randomNumber2 == 7 || randomNumber3 == 7){
                 voitto +=1;
-                raha += (rahaMaara*3);
                 System.out.println("Voitit!");
+                raha += (rahaMaara*voitto);
                 System.out.println("Omistat "+raha+" euroa yhteensä rahaa!");
             }
             else {
